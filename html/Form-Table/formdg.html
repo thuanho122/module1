@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        span {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section style=" border: 1px solid; padding: 5px;">
+        <form action="">
+            <table>
+                <caption style=" color: white; background-color: orange;"> Your Hoppies</caption>
+                <tr>
+                    <td colspan="2" style="text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><span>Your Name</span></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"> <span>Email</span></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"> <span>Hobbies</span> </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox">Sport</td>
+                                <td><input type="checkbox">Music</td>
+                                <td><input type="checkbox">Reading Books</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">Web Surfing</td>
+                                <td> <input type="checkbox">Play Game</td>
+                                <td><input type="checkbox">Filming</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">Travel <br></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="Submit" value="Submit Forrm"> <input type="Submit" value="Reset Forrm"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <br>
+    <section style=" border: 1px solid; padding: 5px;">
+        <form action="" method="POST">
+            <table>
+                <h3 style="color: blue; background-color: cornflowerblue;"> Student Registration</h3>
+                <tr>
+                    <td> <span> Full Name</span></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td> <span>Date of birth</span> </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td> <span>Gender</span> </td>
+                    <td>
+                        <input type="radio" id="gender1">
+                        <label for="gender1"> Male</label>
+                        <input type="radio" id="gender2">
+                        <label for="gender2">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Address</span></td>
+                    <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td><span>Class</span></td>
+                    <td>
+                        <select>
+                            <option value="">__Choose Class__</option>
+                            <option value="A">1</option>
+                            <option value="B">2</option>
+                            <option value="C">3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Email</span></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><span>Phone</span></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="Submit" value="Registry Forrm"> <input type="Submit" value="Reset Form"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+
+</html>

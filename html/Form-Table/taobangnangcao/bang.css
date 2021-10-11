@@ -1,0 +1,60 @@
+#chessTable, #calendarTable{
+    width: 600px;
+    height: 600px;
+    border-spacing: 0;
+}
+#chessTable tr,
+#chessTable td{
+    border: 1px solid #000;
+}
+#chessTable tr:nth-child(even) > td:nth-child(even){
+    background-color: #000;
+}
+#chessTable tr:nth-child(odd) > td:nth-child(odd){
+    background-color: #000;
+}
+
+#calendarTable tr,
+#calendarTable td{
+    border: 1px solid #c5bebe;
+    text-align: center;
+    font-weight: bold;
+}
+#calendarTable caption{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#calendarTable tr:first-child, #calendarTable tr:nth-child(2){
+    height: 50px;
+    background: orange;
+}
+#calendarTable tr:first-child > td,
+#calendarTable tr:nth-child(2) > td{
+    border-color: #fff;
+}
+#calendarTable tr:nth-child(2){
+    background-color: transparent;  
+}
+#calendarTable tr:first-child td:first-child{
+    background-color: red;
+}
+#calendarTable tr:first-child td:last-child{
+    background-color: blue;
+}
+.tr_days small{
+    color: black!important;
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+}
+.tr_days td{
+    font-size: 24px;
+}
+.tr_days > td:first-child{
+    color: red;
+}
+.tr_days > td:last-child{
+    color: blue;
+}
