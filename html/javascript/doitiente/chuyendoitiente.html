@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chuyển đổi tiền tệ</title>
+</head>
+
+<body>
+    <p>Amount</p>
+    <input id="dauvao" type="number" min="1" value="1"> 
+    <br>
+    <p>From Currency</p>
+    <select name="From Currency" id="FromCurrency">
+        <option value="VND">Vietnam</option>
+        <option value="USD">USD</option>
+    </select>
+    <br>
+    <p>To Currency</p>
+    <select name="To Currency" id="ToCurrency">
+        <option value="USD">USD</option>
+        <option value="VND">Vietnam</option>
+    </select>
+    <br>
+    <button onclick="nut()">Convert</button>
+    <script>
+        function nut() {
+
+            let giatrivao = document.getElementById('dauvao').value;
+            let FromCurrency = document.getElementById('FromCurrency').value;
+            let ToCurrency = document.getElementById('ToCurrency').value;
+
+
+            if (FromCurrency == ToCurrency) {
+                alert(giatrivao);
+            }
+            if (FromCurrency == "VND" && ToCurrency == "USD") {
+                alert(giatrivao / 23000);
+            }
+            if (FromCurrency == "USD" && ToCurrency == "VND") {
+                alert(giatrivao * 23000);
+            }
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
