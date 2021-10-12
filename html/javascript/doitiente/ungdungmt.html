@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <div>
+        <input id="input1" type="number">
+        <input id="input2" type="number">
+    </div>
+    <br>
+    <div>
+        <input type="button" value="Addition(+)" onclick="runHandlerBy('add')">
+        <input type="button" value="Subtraction(-)" onclick="runHandlerBy('sub')">
+        <input type="button" value="Multiplication(X)" onclick="runHandlerBy('mul')">
+        <input type="button" value="Division(/)" onclick="runHandlerBy('div')">
+    </div>
+    <br>
+    <div>
+        <b>Result Division:<span id="valueBox"></span></b>
+    </div>
+    <script>
+        function runHandlerBy(operator){console.log(operator)
+            let valueBox = document.getElementById('valueBox')
+            let inputOne = parseInt(document.getElementById('input1').value)
+            let inputTwo = parseInt(document.getElementById('input2').value)
+            let result = 0
+            switch(operator){
+                case('add'):
+                    result = inputOne + inputTwo
+                break
+                case('sub'):
+                    result = inputOne - inputTwo
+                break
+                case('mul'):
+                    result = inputOne * inputTwo
+                break
+                case('div'):
+                    result = inputOne / inputTwo
+                break
+            }
+
+            valueBox.innerText = result
+        }
+    </script>
+</body>
+</html>
