@@ -1,0 +1,11 @@
+table{
+    background-color: gray;
+    margin: auto;
+}
+#Result{
+    width: 150px;
+}
+.btn{
+    width: 35px;
+    height: 25px;
+}

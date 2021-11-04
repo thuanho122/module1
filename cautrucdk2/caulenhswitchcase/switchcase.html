@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>câu lệnh switch-case</title>
+</head>
+
+<body>
+    <input type="text" id="inputMonth">
+    <button onclick="clickMonth()"> tính số ngày </button>
+    <br>
+    <b id="ketqua"></b>
+    <script>
+        
+        function clickMonth() {
+            var msg = '';
+            var month =  parseInt(document.getElementById("inputMonth").value);
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12: {
+
+                    msg = `thang ${month} co 31 ngay`;
+                    break;
+                }
+                case 4:
+                case 6:
+                case 9:
+                case 11: {
+                    msg = `thang ${month} co 30 ngay`;
+                    break;
+                }
+                case 2: {
+                    msg = `thang ${month} co 28/29 ngay`;
+                    break;
+                }
+                default: {
+                    msg = `thang ${month} khong hop le`;
+                }
+            }
+           document.getElementById("ketqua").innerText = msg;
+        }
+
+    </script>
+
+    
+</body>
+
+</html>

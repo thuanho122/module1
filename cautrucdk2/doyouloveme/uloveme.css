@@ -1,0 +1,18 @@
+h1{
+    position: absolute;
+    left: 550px;
+    top: 300px;
+    color: red;
+}
+#btnYes{
+    position: absolute;
+    left: 590px;
+    top: 370px;
+    background-color: aquamarine;
+}
+#btnNo{
+    position: absolute;
+    left: 660px;
+    top: 370px;
+    background-color: aquamarine; 
+}

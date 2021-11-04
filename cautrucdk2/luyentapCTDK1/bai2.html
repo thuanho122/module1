@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bai2 </title>
+</head>
+
+<body>
+    </b>Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</p>
+    <label for="ageStudent">Enter age of student :</label>
+    <input type="text" size="10px" id="ageStudent">
+    <input type="button" value="Check" onclick="CheckAge()">
+    <p id="result2"><br></p>
+    <hr>
+    <script>
+        function CheckAge() {
+            let age = parseInt(document.getElementById("ageStudent").value);
+            let res = document.getElementById("result2");
+            if (!isNaN(age)) {
+                if (age >=16) {
+                    res.innerHTML = "<b>This student is old enough to study grade 10.</b>";
+                } else {
+                    res.innerHTML = "<b> This student is NOT old enough to study grade 10.</b>";
+                }
+            } else {
+                res.innerHTML = "<b> Input must be a number !</b>"
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
